@@ -66,6 +66,7 @@ CoursesPage.propTypes = {
   courses: PropTypes.array.isRequired
 };
 
+//////////// start redux ////////////
 function mapDispatchToProps(dispatch) {
   return {
     actions: bindActionCreators(courseActions, dispatch)
@@ -79,3 +80,4 @@ function mapStateToProps(state, ownProps) {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(CoursesPage);
+//////////// end redux ////////////
